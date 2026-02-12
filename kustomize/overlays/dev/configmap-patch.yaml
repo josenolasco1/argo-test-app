@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argo-test-index
+  namespace: argo-test
+data:
+  index.html: |-
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Dev</title>
+    </head>
+    <body>
+      <h1>Hello from argo-test (dev)!</h1>
+      <p>Environment: Development</p>
+    </body>
+    </html>

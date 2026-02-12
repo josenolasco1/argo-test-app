@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argo-test-index
+  namespace: argo-test
+data:
+  index.html: |-
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Hello</title>
+    </head>
+    <body>
+      <h1>Hello from argo-test!</h1>
+      <p>This page replaces the default NGINX welcome page.</p>
+    </body>
+    </html>
